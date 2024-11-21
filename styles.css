@@ -1,0 +1,17 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+  }
+  
+  #navbar{
+    margin:40px 10px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    min-width: 280px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+  
+  }

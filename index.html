@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="styles.css">
+    <title>CSS Technical Documentation</title>
+  </head>
+  <body>
+
+    <main id="main-doc">
+      
+<!--Cascading Stylesheets -->
+      <section id="Cascading_Style_Sheets" class="main-section">
+        <header>Cascading Style Sheets</header>
+    <nav id="navbar">
+        <header>Content</header>
+        <li><a href ="#Cascading_Style_Sheets" class="nav-link">Cascading Style Sheets</a></li>
+        <li><a href ="#CSS_basics" class="nav-link">CSS Basics</a></li>
+        <li><a href ="#first_steps" class="nav-link">First Steps</a></li>
+        <li><a href ="#How_CSS_is_structured" class="nav-link">How CSS is structured</a></li>
+        <li><a href ="#CSS_building_blocks" class="nav-link">CSS Building Blocks</a></li>
+        <li><a href ="#CSS_styling_text" class="nav-link">CSS Styling Text</a></li>
+        <li><a href ="#CSS_layouts" class="nav-link">CSS Layouts</a></li>
+        <li><a href ="#references" class="nav-link">References</a></li>
+      </nav>
+      <h1>Cascading Style Sheets</h1>
+        <article class="css_p_article">
+          <p class="css_body_p">Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
+
+CSS is among the core languages of the open web and is standardized across Web browsers according to W3C specifications. Previously, the development of various parts of CSS specification was done synchronously, which allowed the versioning of the latest recommendations. You might have heard about CSS1, CSS2.1, or even CSS3. There will never be a CSS3 or a CSS4; rather, everything is now just "CSS" with individual CSS modules having version numbers.
+
+After CSS 2.1, the scope of the specification increased significantly and the progress on different CSS modules started to differ so much, that it became more effective to develop and release recommendations separately per module. Instead of versioning the CSS specification, W3C now periodically takes a snapshot of the latest stable state of the CSS specification and individual modules progress. CSS modules now have version numbers, or levels, such as CSS Color Module Level 5.</p>
+        </article>
+
+        <article class="intro_key_article">
+          <h3 class="key_title">Key resources</h3>
+          <span class="key_subtitle">CSS Introduction</span>
+          <p>If you're new to web development, be sure to read our CSS basics article to learn what CSS is and how to use it.</p>
+          <span class="key_css_tuto">CSS Tutorials</span>
+          <p>Our CSS learning area contains a wealth of tutorials to take you from beginner level to proficiency, covering all the fundamentals.</p>
+          <span class="key_ref">CSS Reference</span>
+          <p>Our CSS reference describes every property and concept of CSS.</p>
+        </article>
+      </section>
+
+<!--CSS Basics -->
+      <section id="CSS_basics" class="main-section">
+        <header>CSS basics</header>
+        <article class="css_basics">
+          <p class="css_basics_p1">
+            CSS (Cascading Style Sheets) is the code that styles web content. CSS basics walks through what you need to get started. We'll answer questions like: How do I make text red? How do I make content display at a certain location in the (webpage) layout? How do I decorate my webpage with background images and colors?
+          </p>
+          <h3 class="what_is_css">What is CSS?</h3>
+          <p class="what_is_css_p">Like HTML, CSS is not a programming language. It's not a markup language either. CSS is a style sheet language. CSS is what you use to selectively style HTML elements. For example, this CSS selects paragraph text, setting the color to red:</p>
+          <code>
+            p {
+                color: red;
+              }
+          </code>
+        </article>
+      </section>
+
+<!--First Steps -->
+      <section id="first_steps" class="main-section">
+        <header>First steps</header>
+        <article class="prerequisites">
+          <p class="first_steps">
+            CSS (Cascading Style Sheets) is used to style and lay out web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features. This module provides a gentle beginning to your path towards CSS mastery with the basics of how it works, what the syntax looks like, and how you can start using it to add styling to HTML.
+          </p>
+          <p class="prerequisites_p">
+            Before starting this module, you should have:
+
+Basic familiarity with using computers and using the Web passively (i.e. looking at it, consuming the content.)
+A basic work environment set up, as detailed in Installing basic software, and an understanding of how to create and manage files, as detailed in Dealing with files.
+Basic familiarity with HTML, as discussed in the Introduction to HTML module.
+          </p>
+        </article>
+      </section>
+
+<!-- Hows CSS Structured?-->
+      <section id="How_CSS_is_structured" class="main-section">
+        <header>How CSS is structured</header>
+        <article class="css_structure">
+          <p>Now that you are beginning to understand the purpose and use of CSS, let's examine the structure of CSS.</p>
+          <table class="t_css_structure">
+            <thead>Objective:</thead>
+            <tbody>To learn CSS's fundamental syntax structures in detail.</tbody>
+          </table>
+          <span class="applying_css">Applying CSS to HTML</span>
+          <p>First, let's examine three methods of applying CSS to a document: with an external stylesheet, with an internal stylesheet, and with inline styles.</p>
+          <span class="external_css_span">External stylesheet</span>
+          <p>An external stylesheet contains CSS in a separate file with a .css extension. This is the most common and useful method of bringing CSS to a document. You can link a single CSS file to multiple web pages, styling all of them with the same CSS stylesheet. In the Getting started with CSS, we linked an external stylesheet to our web page.</p>
+          <p>You reference an external CSS stylesheet from an HTML &lt;link&gt; element:</p>
+          <div class="snippit_html_1">
+          <code>
+            &lt;!doctype html&gt;
+            &lt;html lang=&quot;en-GB&quot;&gt;
+              &lt;head&gt;
+                &lt;meta charset=&quot;utf-8&quot; /&gt;
+                &lt;title&gt;My CSS experiment&lt;/title&gt;
+                &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot; /&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+                &lt;h1&gt;Hello World!&lt;/h1&gt;
+                &lt;p&gt;This is my first CSS example&lt;/p&gt;
+              &lt;/body&gt;
+            &lt;/html&gt;
+          </code>
+          </div>
+          <p>The CSS stylesheet file might look like this:</p>
+          <div class="snippit_css_1">
+            <code>
+              h1 {
+                color: blue;
+                background-color: yellow;
+                border: 1px solid black;
+              }
+
+              p {
+                color: red;
+              }
+            </code>
+          </div>
+            <p>The href attribute of the &lt;link&gt; element needs to reference a file on your file system. In the example above, the CSS file is in the same folder as the HTML document, but you could place it somewhere else and adjust the path. Here are three examples:</p>
+            <div class="snippit_html_2">
+              <code>
+                &lt;!-- Inside a subdirectory called styles inside the current directory --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;styles/style.css&quot; /&gt;
+
+&lt;!-- Inside a subdirectory called general, which is in a subdirectory called styles, inside the current directory --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;styles/general/style.css&quot; /&gt;
+
+&lt;!-- Go up one directory level, then inside a subdirectory called styles --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;../styles/style.css&quot; /&gt;
+
+              </code>
+            </div>
+            <span>
+              Internal stylesheet
+            </span>
+            <p>
+              An internal stylesheet resides within an HTML document. To create an internal stylesheet, you place CSS inside a &lt;style&gt; element contained inside the HTML &lt;head&gt;.
+
+The HTML for an internal stylesheet might look like this:
+            </p>
+            <div class="snippit_html_3">
+              <code>
+                &lt;!doctype html&gt;
+&lt;html lang=&quot;en-GB&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;title&gt;My CSS experiment&lt;/title&gt;
+    &lt;style&gt;
+      h1 {
+        color: blue;
+        background-color: yellow;
+        border: 1px solid black;
+      }
+
+      p {
+        color: red;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;This is my first CSS example&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+              </code>
+            </div>
+            <p>
+              In some circumstances, internal stylesheets can be useful. For example, perhaps you're working with a content management system where you are blocked from modifying external CSS files.
+
+But for sites with more than one page, an internal stylesheet becomes a less efficient way of working. To apply uniform CSS styling to multiple pages using internal stylesheets, you must have an internal stylesheet in every web page that will use the styling. The efficiency penalty carries over to site maintenance too. With CSS in internal stylesheets, there is the risk that even one simple styling change may require edits to multiple web pages.
+            </p>
+            <span>Inline styles</span>
+            <p>
+              Inline styles are CSS declarations that affect a single HTML element, contained within a style attribute. The implementation of an inline style in an HTML document might look like this:
+            </p>
+            <div class="snippit_html_4">
+              <code>
+                &lt;!doctype html&gt;
+&lt;html lang=&quot;en-GB&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;title&gt;My CSS experiment&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1 style=&quot;color: blue;background-color: yellow;border: 1px solid black;&quot;&gt;
+      Hello World!
+    &lt;/h1&gt;
+    &lt;p style=&quot;color:red;&quot;&gt;This is my first CSS example&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+              </code>
+
+            </div>
+            <p>
+              Avoid using CSS in this way, when possible. It is the opposite of a best practice. First, it is the least efficient implementation of CSS for maintenance. One styling change might require multiple edits within a single web page. Second, inline CSS also mixes (CSS) presentational code with HTML and content, making everything more difficult to read and understand. Separating code and content makes maintenance easier for all who work on the website.
+
+There are a few circumstances where inline styles are more common. You might have to resort to using inline styles if your working environment is very restrictive. For example, perhaps your CMS only allows you to edit the HTML body. You may also see a lot of inline styles in HTML email to achieve compatibility with as many email clients as possible.
+            </p>
+        </article>
+      </section>
+
+<!--CSS Building Blocks -->
+      <section id="CSS_building_blocks" class="main-section">
+        <header>CSS building blocks</header>
+      </section>
+<!--CSS Styling Text -->
+      <section id="CSS_styling_text" class="main-section">
+        <header>CSS styling text</header>
+      </section>
+<!--CSS Layouts -->
+      <section id="CSS_layouts" class="main-section">
+        <header>CSS layouts</header>
+      </section>
+<!--References -->
+      <section id="references" class="main-section">
+        <header>References</header>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
