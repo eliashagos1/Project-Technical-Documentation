@@ -4,11 +4,13 @@
     box-sizing:border-box;
   }
   
-  #navbar{
+
+  .double_content{
+    display: flex;
+    flex-direction: row;
+  }
+  .navbar{
     margin:40px 10px;
-    position: fixed;
-    left: 0px;
-    top: 0px;
     min-width: 280px;
     width: 300px;
     height: 100%;
