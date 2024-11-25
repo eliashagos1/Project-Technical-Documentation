@@ -1,19 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin:0px;
     padding:0px;
     box-sizing:border-box;
   }
   
+/*Flexbox to structure content */
 
-  .double_content{
+  /* .double_content{
     display: flex;
     flex-direction: row;
+  }  */
+
+  /*Position to structure content  */
+
+  .navbar_header{
+    position: fixed;
   }
-  .navbar{
-    margin:40px 10px;
+
+
+  .navbar_header{
     min-width: 280px;
     width: 300px;
     height: 100%;
     border-right: solid;
+    background-color: #f8f6f1;
   
+  }
+
+  #navbar li{
+    height: 100%;
+    margin: 50px 0px;
+    list-style-type: none;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .navbar_h1{
+    text-align: center;
+    padding: 25px 0px;
+    background-color: #203162;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+  }
+
+  /* Main Body of Content CSS */
+
+  .main_reading_content{
+    margin: 0px 310px;
+    width: 70%;
+  }
+
+  .CSS_h1_title{
+    padding: 10px 0px;
+    font-size: 25px;
+  }
+
+  .css_body_p{
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    padding: 15px 0px;
   }

@@ -11,9 +11,9 @@
     <main id="main-doc">
         <!--HEADER-->
        <div class="double_content">
-        <header class="navbar"><h1>Cascading Style Sheets</h1>
+        <header class="navbar_header">
+          <h1 class="navbar_h1">Content</h1>
             <nav id="navbar">
-                <header>Content</header>
                 <li><a href ="#Cascading_Style_Sheets" class="nav-link">Cascading Style Sheets</a></li>
                 <li><a href ="#CSS_basics" class="nav-link">CSS Basics</a></li>
                 <li><a href ="#first_steps" class="nav-link">First Steps</a></li>
@@ -25,10 +25,11 @@
               </nav>
         </header>
       
+      
 <!--Cascading Stylesheets -->
       <div class="main_reading_content">
         <section id="Cascading_Style_Sheets" class="main-section">
-            <h1 class="CSS_title">Cascading Style Sheets</h1>
+            <h1 class="CSS_h1_title">Cascading Style Sheets</h1>
               <article class="css_p_article">
                 <p class="css_body_p">Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
       
@@ -97,20 +98,20 @@
                 <p>An external stylesheet contains CSS in a separate file with a .css extension. This is the most common and useful method of bringing CSS to a document. You can link a single CSS file to multiple web pages, styling all of them with the same CSS stylesheet. In the Getting started with CSS, we linked an external stylesheet to our web page.</p>
                 <p>You reference an external CSS stylesheet from an HTML &lt;link&gt; element:</p>
                 <div class="snippit_html_1">
-                <code>
-                  &lt;!doctype html&gt;
-                  &lt;html lang=&quot;en-GB&quot;&gt;
-                    &lt;head&gt;
-                      &lt;meta charset=&quot;utf-8&quot; /&gt;
-                      &lt;title&gt;My CSS experiment&lt;/title&gt;
-                      &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot; /&gt;
-                    &lt;/head&gt;
-                    &lt;body&gt;
-                      &lt;h1&gt;Hello World!&lt;/h1&gt;
-                      &lt;p&gt;This is my first CSS example&lt;/p&gt;
-                    &lt;/body&gt;
-                  &lt;/html&gt;
-                </code>
+                  <code>
+                    &lt;!doctype html&gt;
+                    &lt;html lang=&quot;en-GB&quot;&gt;
+                      &lt;head&gt;
+                        &lt;meta charset=&quot;utf-8&quot; /&gt;
+                        &lt;title&gt;My CSS experiment&lt;/title&gt;
+                        &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot; /&gt;
+                      &lt;/head&gt;
+                      &lt;body&gt;
+                        &lt;h1&gt;Hello World!&lt;/h1&gt;
+                        &lt;p&gt;This is my first CSS example&lt;/p&gt;
+                      &lt;/body&gt;
+                    &lt;/html&gt;
+                  </code>
                 </div>
                 <p>The CSS stylesheet file might look like this:</p>
                 <div class="snippit_css_1">
