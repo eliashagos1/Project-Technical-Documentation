@@ -70,8 +70,73 @@
     font-size: 25px;
   }
 
-  .css_body_p{
+  .css_p_article, p{
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
-    padding: 15px 0px;
+    font-size: 1.1em;
+    padding: 5px 0px;
+  }
+
+  .key_title{
+    font-size: 27px;
+    margin: 5px 0px;
+  }
+
+  .key_subtitle{
+    font-size: 20px;
+  }
+
+  /* CSS BASICS Section */
+
+  .basics_header_h1{
+    font-size: 25px;
+    font-style: bold;
+    margin: 5px 0px;
+    
+  }
+
+  /* FIRST STEP Section */
+
+  .first_steps_h1{
+    font-size: 25px;
+    margin: 5px 0px;
+  }
+
+  /* HOW IS CSS STRUCTURED Section */
+
+  .how_structure_title{
+    font-size: 25px;
+    margin: 5px 0px;
+
+  }
+
+  .css_structure_article{
+    font-family: "Quicksand",  sans-serif;
+    font-family: 500;
+    font-size: 1.1em;
+  }
+
+  /* CSS BUILDING BLOCKS Section */
+
+  .building_blocks_title{
+    font-size: 25px;
+    margin: 5px 0px;
+  }
+
+  /* CSS STYLING TEXT Section */
+  .styling_text_title{
+    font-size: 25px;
+    margin: 5px 0px;
+  }
+
+  /* CSS LAYOUTS Section */
+  .layouts_title{
+    font-size: 25px;
+    margin: 5px 0px;
+  }
+
+  /* REFERENCES Section */
+  .references_title{
+    font-size: 25px;
+    margin: 5px 0px;
   }
