@@ -61,12 +61,12 @@
   /* Main Body of Content CSS */
 
   .main_reading_content{
-    margin: 0px 310px;
+    margin: 0px 350px;
     width: 70%;
   }
 
   .CSS_h1_title{
-    padding: 10px 0px;
+    padding: 50px 0px 20px 0px;
     font-size: 25px;
   }
 
@@ -139,4 +139,16 @@
   .references_title{
     font-size: 25px;
     margin: 5px 0px;
+  }
+
+
+  /* MEDIA QUERIES Section */
+
+  
+  /* MOBILE PORTRAIT Section */
+
+  @media (min-width:680px) {
+    body{
+      font-size: 16px;
+    }
   }
